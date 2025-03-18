@@ -1,0 +1,33 @@
+{
+    "name": "dagasmart/laravel-support",
+    "description": "php/laravel部分代码封装",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DagaSmart",
+            "email": "dagasmart@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "laravel/framework": ">=8",
+        "ext-json": "*",
+        "ext-bcmath": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DagaSmart\\Support\\": "src/"
+        },
+        "files": [
+            "./src/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DagaSmart\\Support\\SupportServiceProvider"
+            ]
+        }
+    }
+}
